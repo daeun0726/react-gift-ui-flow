@@ -1,15 +1,18 @@
-import { Footer } from '@/components/common/layouts/Footer';
-import { Header } from '@/components/common/layouts/Header';
-import { Home } from '@/pages/Home';
+import styled from '@emotion/styled';
 
 const App = () => {
+  const name = 'Josh Perez';
+
   return (
     <div>
-      <Header></Header>
-      <Home />
-      <Footer>카카오톡 선물하기</Footer>
+      <Title>Hello, {name}</Title>
     </div>
   );
 };
 
 export default App;
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  color: gray;
+`;
